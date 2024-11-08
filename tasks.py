@@ -28,7 +28,7 @@ def my_mlp(w, X, sigma = np.tanh):
     a2 = sigma(W2 @ a1), # layer 1 -> layer 2
     f  = sigma(W3 @ a2) # layer 2 -> output
     
-    return f
+    return f[0, 0, :, :]
 
 # -----------------------------------------------
  
